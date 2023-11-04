@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #002645;
+    color: #fff;
+    display: flex;
+    justify-content: space-betweeny;
+    align-items: center;
+    padding: 10px;
+}
+
+.back-arrow {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.patient-name {
+    font-size: 20px;
+    margin: 0;
+}
+
+.profile {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-details {
+    margin-left: 20px;
+}
+
+.patient-id {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.medical-details {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.progress-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  
+  .progress {
+    transform: rotate(180deg);
+  }
+  
+  .bg-circle {
+    fill: none;
+    stroke: none; /* Remove the background stroke color */
+    stroke-width: 0; /* Remove the background stroke width */
+  }
+  
+  .progress-circle {
+    fill: none;
+    stroke: #002645; /* Progress color */
+    stroke-width: 10;
+    stroke-dasharray: 285; /* Circumference of a circle (2 * π * r) */
+    stroke-dashoffset: 142.5; /* Set to 50% to show half circle */
+    transition: stroke-dashoffset 0.5s; /* Animation duration */
+  }
+  
+  .percentage {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #002645; /* Progress color */
+  }
+
+
+/* Styles for screens with a width of 768px and above */
+@media (min-width: 768px) {
+    .profile {
+        flex-direction: column; /* Stack elements vertically on larger screens */
+    }
+
+    .profile-image {
+        margin: 20px 0; /* Add spacing above and below the image */
+    }
+}
+.profile {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Move .profile-image to the right */
+}
+
+.profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
